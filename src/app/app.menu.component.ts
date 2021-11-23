@@ -27,10 +27,13 @@ export class AppMenuComponent implements OnInit {
             {
                 label: 'Dark Souls', icon: 'pi pi-fw pi-star', routerLink: ['/uikit'],
                 items: [
-                    // {label: 'Form Layout', icon: 'pi pi-fw pi-id-card', routerLink: ['']},
-                    // {label: 'List', icon: 'pi pi-fw pi-list', routerLink: ['/uikit/list']},
+                     {label: 'Dark Souls', icon: 'pi pi-fw pi-list', routerLink: ['/dark']},
+                     {label: 'Dark Souls II', icon: 'pi pi-fw pi-list', routerLink: ['/dark-souls-ii']},
+                     {label: 'Dark Souls III', icon: 'pi pi-fw pi-list', routerLink: ['/dark-souls-iii'], items:[
+                        {label: 'Bosses', icon: 'pi pi-fw pi-list', routerLink: ['']},
+                     ]},
                 ]
-            }
+            },
         ];
     }
 }
