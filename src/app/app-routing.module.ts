@@ -1,3 +1,4 @@
+import { DarkSoulsIITableComponent } from './demo/view/dark-souls-ii/dark-souls-ii-table/dark-souls-ii-table.component';
 import { ListBossesComponent } from './demo/view/dark-souls/list-bosses.component';
 import {RouterModule} from '@angular/router';
 import {NgModule} from '@angular/core';
@@ -15,6 +16,7 @@ import { ListDemoComponent } from './demo/view/league-of-legends/listdemo.compon
                     {path: '', component: ListDemoComponent},
                     {path: 'dark', component: ListBossesComponent},
                     {path: 'dark-souls-ii-bosses', component: DarkSoulsIIComponent},
+                    {path: 'dark-souls-ii-bosses-table', component: DarkSoulsIITableComponent},
                     {path: 'dark-souls-iii-bosses', component: DarkSoulsIIIComponent},
                 ]
             },

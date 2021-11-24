@@ -115,6 +115,7 @@ import { DarkSoulsIIService } from './demo/view/dark-souls-ii/dark-souls-ii.serv
 import { DarkSoulsIIComponent } from './demo/view/dark-souls-ii/dark-souls-ii.component';
 import { DarkSoulsIIIComponent } from './demo/view/dark-souls-iii/dark-souls-iii.component';
 import { ListDemoComponent } from './demo/view/league-of-legends/listdemo.component';
+import { DarkSoulsIITableComponent } from './demo/view/dark-souls-ii/dark-souls-ii-table/dark-souls-ii-table.component';
 
 @NgModule({
     imports: [
@@ -218,7 +219,8 @@ import { ListDemoComponent } from './demo/view/league-of-legends/listdemo.compon
         ListDemoComponent,
         ListBossesComponent,
         DarkSoulsIIComponent,
-        DarkSoulsIIIComponent
+        DarkSoulsIIIComponent,
+        DarkSoulsIITableComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

@@ -59,16 +59,16 @@
 		{
 			"id": "5",
 			"code": "h456wer53",
-			"name": "Capra Demon",
+			"name": "Flexile Sentry",
 			"description": "Product Description",
-			"image": "capra-demon.jpg",
+			"image": "Flexile Sentry.jpg",
 			"city": "Runeterra",
 			"category": "Accessories",
 			"quantity": 73,
 			"inventoryStatus": "moderado",
 			"rating": 4,
 			"runes": "",
-			"lore": ""
+			"lore": "This monstrous, contorted sentry was assigned the task of emptying the dungeons of poor, cursed souls. This terrifying lizard-like creature oversees the ferrying of undead into the Lost Bastille. The Bastille is one of your destinations, but will you go as a triumphant warrior, or as an imprisoned hollow?"
 		},
 		{
 			"id": "6",

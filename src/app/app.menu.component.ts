@@ -37,6 +37,7 @@ export class AppMenuComponent implements OnInit {
                     {
                         label: 'Dark Souls II', icon: 'pi pi-fw pi-list', routerLink: ['/dark-souls-ii'], items: [
                             { label: 'Bosses', icon: 'pi pi-angle-right', routerLink: ['/dark-souls-ii-bosses'] },
+                            { label: 'Items', icon: 'pi pi-angle-right', routerLink: ['/dark-souls-ii-bosses-table'] },
                             { label: 'Lore', icon: 'pi pi-angle-right', routerLink: ['/dark-souls-ii-lore'] },
                         ]
                     },
