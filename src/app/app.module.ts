@@ -1,5 +1,5 @@
-import { DarkSoulsIIComponent } from './demo/view/dark-souls-iii/dark-souls-ii.component';
-import { BossService } from './demo/view/darkSouls/dark-souls.service';
+import { DarkSoulsIIIService } from './demo/view/dark-souls-iii/dark-souls-iii.service';
+import { BossService } from './demo/view/dark-souls/dark-souls.service';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
@@ -111,8 +111,10 @@ import {ProductService} from './demo/service/productservice';
 import {MenuService} from './app.menu.service';
 import {AppBreadcrumbService} from './app.breadcrumb.service';
 import { ListDemoComponent } from './demo/view/leagueOfLegends/listdemo.component';
-import { ListBossesComponent } from './demo/view/darkSouls/list-bosses.component';
-import { DarkSoulsIIService } from './demo/view/dark-souls-iii/dark-souls-ii.service';
+import { ListBossesComponent } from './demo/view/dark-souls/list-bosses.component';
+import { DarkSoulsIIService } from './demo/view/dark-souls-ii/dark-souls-ii.service';
+import { DarkSoulsIIComponent } from './demo/view/dark-souls-ii/dark-souls-ii.component';
+import { DarkSoulsIIIComponent } from './demo/view/dark-souls-iii/dark-souls-iii.component';
 
 @NgModule({
     imports: [
@@ -215,12 +217,13 @@ import { DarkSoulsIIService } from './demo/view/dark-souls-iii/dark-souls-ii.ser
         FormLayoutDemoComponent,
         ListDemoComponent,
         ListBossesComponent,
-        DarkSoulsIIComponent
+        DarkSoulsIIComponent,
+        DarkSoulsIIIComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
         CountryService, CustomerService, EventService, IconService, NodeService,
-        PhotoService, ProductService, MenuService, BossService, DarkSoulsIIService,AppBreadcrumbService
+        PhotoService, ProductService, MenuService, BossService, DarkSoulsIIService, DarkSoulsIIIService,AppBreadcrumbService
     ],
     bootstrap: [AppComponent]
 })
