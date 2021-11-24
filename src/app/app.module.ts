@@ -1,3 +1,4 @@
+import { DarkSoulsIIComponent } from './demo/view/dark-souls-iii/dark-souls-ii.component';
 import { BossService } from './demo/view/darkSouls/dark-souls.service';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
@@ -111,6 +112,7 @@ import {MenuService} from './app.menu.service';
 import {AppBreadcrumbService} from './app.breadcrumb.service';
 import { ListDemoComponent } from './demo/view/leagueOfLegends/listdemo.component';
 import { ListBossesComponent } from './demo/view/darkSouls/list-bosses.component';
+import { DarkSoulsIIService } from './demo/view/dark-souls-iii/dark-souls-ii.service';
 
 @NgModule({
     imports: [
@@ -212,12 +214,13 @@ import { ListBossesComponent } from './demo/view/darkSouls/list-bosses.component
         AppFooterComponent,
         FormLayoutDemoComponent,
         ListDemoComponent,
-        ListBossesComponent
+        ListBossesComponent,
+        DarkSoulsIIComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
         CountryService, CustomerService, EventService, IconService, NodeService,
-        PhotoService, ProductService, MenuService, BossService,AppBreadcrumbService
+        PhotoService, ProductService, MenuService, BossService, DarkSoulsIIService,AppBreadcrumbService
     ],
     bootstrap: [AppComponent]
 })

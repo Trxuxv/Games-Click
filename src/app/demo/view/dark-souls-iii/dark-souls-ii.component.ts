@@ -1,14 +1,14 @@
-import { BossService } from './dark-souls.service';
+import { DarkSoulsIIService } from './dark-souls-ii.service';
 import { Component, OnInit } from '@angular/core';
 import { SelectItem } from 'primeng/api';
 import { AppBreadcrumbService } from 'src/app/app.breadcrumb.service';
 import { Boss } from '../../domain/boss';
 
 @Component({
-    templateUrl: './list-bosses.html',
-    styleUrls: ['./list-bosses.scss']
+    templateUrl: './dark-souls-ii.component.html',
+    styleUrls: ['.//dark-souls-ii.scss']
 })
-export class ListBossesComponent implements OnInit {
+export class DarkSoulsIIComponent implements OnInit {
 
     bosses: Boss[];
 
@@ -28,15 +28,15 @@ export class ListBossesComponent implements OnInit {
 
     orderCities: any[];
 
-    constructor(private bossService: BossService, private breadcrumbService: AppBreadcrumbService) {
+    constructor(private darkSoulsIIService: DarkSoulsIIService, private breadcrumbService: AppBreadcrumbService) {
         this.breadcrumbService.setItems([
-            { label: 'dark souls' },
-            { label: 'bosses', routerLink: ['/uikit/list'] }
+            { label: 'dark souls ii' },
+            { label: 'Bosses', routerLink: ['/uikit/list'] }
         ]);
     }
 
     ngOnInit() {
-        this.bossService.getBosses().then(data => this.bosses = data);
+        this.darkSoulsIIService.getBosses().then(data => this.bosses = data);
 
         this.sortOptions = [
             { label: 'Dificulty High to Low', value: '!inventoryStatus' },
