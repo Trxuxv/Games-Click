@@ -1,11 +1,4 @@
-<div class="p-grid table-demo">
-	<div class="p-col-12">
-		<div class="card">
-			<h5>Items</h5>
-			<div class="card">
-				<p-tabView orientation="left">
-					<p-tabPanel header="Bosses">
-						<p-table #dt [value]="customers1" [(selection)]="selectedCustomers1" dataKey="id"
+<p-table #dt [value]="customers1" [(selection)]="selectedCustomers1" dataKey="id"
 							styleClass="p-datatable-customers" [rowHover]="true" [rows]="10" [paginator]="true"
 							[filterDelay]="0"
 							[globalFilterFields]="['name','country.name','representative.name','status']">
@@ -21,14 +14,7 @@
 							</ng-template>
 							<ng-template pTemplate="header">
 								<tr>
-									<th pSortableColumn="country.name">
-										<div class="p-d-flex p-jc-between p-ai-center">
-											Loot
-											<p-sortIcon field="country.name"></p-sortIcon>
-											<p-columnFilter type="text" field="country.name" display="menu"
-												class="p-ml-auto">
-											</p-columnFilter>
-										</div>
+									<th>
 									</th>
 									<th pSortableColumn="name">
 										<div class="p-d-flex p-jc-between p-ai-center">
@@ -38,37 +24,17 @@
 											</p-columnFilter>
 										</div>
 									</th>
-									<th pSortableColumn="representative.name">
+									<th pSortableColumn="damage">
 										<div class="p-d-flex p-jc-between p-ai-center">
-											Souls
-											<p-sortIcon field="representative.name"></p-sortIcon>
-											<p-columnFilter field="representative" matchMode="in" display="menu"
-												[showMatchModes]="false" [showOperator]="false" [showAddButton]="false">
-												<ng-template pTemplate="header">
-													<div class="p-px-3 p-pt-3 p-pb-0">
-														<span class="p-text-bold">Agent Picker</span>
-													</div>
-												</ng-template>
-												<ng-template pTemplate="filter" let-value let-filter="filterCallback">
-													<p-multiSelect [ngModel]="value" [options]="representatives"
-														placeholder="Any" (onChange)="filter($event.value)"
-														optionLabel="name">
-														<ng-template let-option pTemplate="item">
-															<div class="p-multiselect-representative-option">
-																<img [alt]="option.label"
-																	src="assets/demo/images/avatar/{{option.image}}"
-																	width="32" style="vertical-align: middle" />
-																<span class="p-ml-1">{{option.name}}</span>
-															</div>
-														</ng-template>
-													</p-multiSelect>
-												</ng-template>
+											Damage
+											<p-sortIcon field="damage"></p-sortIcon>
+											<p-columnFilter type="text" field="damage" display="menu" class="p-ml-auto">
 											</p-columnFilter>
 										</div>
 									</th>
 									<th pSortableColumn="date">
 										<div class="p-d-flex p-jc-between p-ai-center">
-											Date
+											Merchant
 											<p-sortIcon field="date"></p-sortIcon>
 											<p-columnFilter type="date" field="date" display="menu" class="p-ml-auto">
 											</p-columnFilter>
@@ -76,7 +42,7 @@
 									</th>
 									<th pSortableColumn="balance">
 										<div class="p-d-flex p-jc-between p-ai-center">
-											Balance
+											Sold for
 											<p-sortIcon field="balance"></p-sortIcon>
 											<p-columnFilter type="numeric" field="balance" display="menu" currency="USD"
 												class="p-ml-auto"></p-columnFilter>
@@ -84,7 +50,7 @@
 									</th>
 									<th pSortableColumn="status">
 										<div class="p-d-flex p-jc-between p-ai-center">
-											Required
+											Category
 											<p-sortIcon field="status"></p-sortIcon>
 											<p-columnFilter field="status" matchMode="equals" display="menu">
 												<ng-template pTemplate="filter" let-value let-filter="filterCallback">
@@ -99,7 +65,7 @@
 											</p-columnFilter>
 										</div>
 									</th>
-									<th pSortableColumn="activity">
+									<!-- <th pSortableColumn="activity">
 										<div class="p-d-flex p-jc-between p-ai-center">
 											Activity
 											<p-sortIcon field="activity"></p-sortIcon>
@@ -116,16 +82,16 @@
 												</ng-template>
 											</p-columnFilter>
 										</div>
-									</th>
+									</th> -->
 								</tr>
 							</ng-template>
 							<ng-template pTemplate="body" let-customer>
 								<tr class="p-selectable-row">
-									<td>
-										<span class="p-column-title">Country</span>
+									<td style="text-align: center;">
+										<span class="p-column-title">Icon</span>
 										<img [alt]="customer.representative.name"
-											src="assets/demo/images/dark-souls-ii/bosses/{{customer.representative.image}}"
-											width="32" style="vertical-align: middle" />
+											src="assets/demo/images/dark-souls-ii/arrow/{{customer.representative.image}}"
+											width="32" style="vertical-align: middle;" />
 									</td>
 									<td>
 										<span class="p-column-title">Name</span>
@@ -134,25 +100,25 @@
 									<td>
 										<span class="p-column-title">Representative</span>
 										<span class="p-column-title">Date</span>
-										{{customer.date | date: 'MM/dd/yyyy'}}
+										{{customer.damage}}
 									</td>
 									<td>
 										<span class="p-column-title">Date</span>
-										{{customer.date | date: 'MM/dd/yyyy'}}
+										{{customer.merchant}}
 									</td>
 									<td>
 										<span class="p-column-title">Balance</span>
-										{{customer.balance | currency:'USD':'symbol'}}
+										{{customer.balance}}
 									</td>
 									<td>
 										<span class="p-column-title">Status</span>
 										<span
 											[class]="'customer-badge status-' + customer.status">{{customer.status}}</span>
 									</td>
-									<td>
+									<!-- <td>
 										<span class="p-column-title">Activity</span>
 										<p-progressBar [value]="customer.activity" [showValue]="false"></p-progressBar>
-									</td>
+									</td> -->
 								</tr>
 							</ng-template>
 							<ng-template pTemplate="emptymessage">
@@ -161,43 +127,3 @@
 								</tr>
 							</ng-template>
 						</p-table>
-
-					</p-tabPanel>
-					<p-tabPanel header="Arrows">
-						<app-arrows></app-arrows>
-					</p-tabPanel>
-					<p-tabPanel header="Bonfire Items">
-						<app-bonfire-items></app-bonfire-items>
-					</p-tabPanel>
-					<p-tabPanel header="Consumables">
-						Consumables
-					</p-tabPanel>
-					<p-tabPanel header="Multiplayer Items">
-						Multiplayer Items
-					</p-tabPanel>
-					<p-tabPanel header="Keys">
-						Keys
-					</p-tabPanel>
-					<p-tabPanel header="Rings">
-						Rings
-					</p-tabPanel>
-					<p-tabPanel header="Armor Sets">
-						Armor Sets
-					</p-tabPanel>
-					<p-tabPanel header="Head">
-						Head
-					</p-tabPanel>
-					<p-tabPanel header="Chest">
-						Chest
-					</p-tabPanel>
-					<p-tabPanel header="Hands">
-						Hands
-					</p-tabPanel>
-					<p-tabPanel header="Legs">
-						Legs
-					</p-tabPanel>
-				</p-tabView>
-			</div>
-
-		</div>
-	</div>
