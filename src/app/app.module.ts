@@ -110,11 +110,11 @@ import {ProductService} from './demo/service/productservice';
 
 import {MenuService} from './app.menu.service';
 import {AppBreadcrumbService} from './app.breadcrumb.service';
-import { ListDemoComponent } from './demo/view/leagueOfLegends/listdemo.component';
 import { ListBossesComponent } from './demo/view/dark-souls/list-bosses.component';
 import { DarkSoulsIIService } from './demo/view/dark-souls-ii/dark-souls-ii.service';
 import { DarkSoulsIIComponent } from './demo/view/dark-souls-ii/dark-souls-ii.component';
 import { DarkSoulsIIIComponent } from './demo/view/dark-souls-iii/dark-souls-iii.component';
+import { ListDemoComponent } from './demo/view/league-of-legends/listdemo.component';
 
 @NgModule({
     imports: [

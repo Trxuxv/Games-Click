@@ -40,13 +40,20 @@ export class AppMenuComponent implements OnInit {
                             { label: 'Lore', icon: 'pi pi-angle-right', routerLink: ['/dark-souls-ii-lore'] },
                         ]
                     },
-                    
+
                     {
                         label: 'Dark Souls III', icon: 'pi pi-fw pi-list', routerLink: ['/dark-souls-iii'], items: [
                             { label: 'Bosses', icon: 'pi pi-angle-right', routerLink: ['/dark-souls-iii-bosses'] },
                             { label: 'Lore', icon: 'pi pi-angle-right', routerLink: ['/dark-souls-iii-lore'] },
                         ]
                     }
+                ]
+            },
+            {
+                label: 'Bloodborne', icon: 'pi pi-fw pi-star', routerLink: ['/uikit'],
+                items: [
+                    { label: 'Bosses', icon: 'pi pi-angle-right', routerLink: ['/dark-souls-iii-bosses'] },
+                    { label: 'Lore', icon: 'pi pi-angle-right', routerLink: ['/dark-souls-iii-lore'] },
                 ]
             },
         ];

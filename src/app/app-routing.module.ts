@@ -2,9 +2,9 @@ import { ListBossesComponent } from './demo/view/dark-souls/list-bosses.componen
 import {RouterModule} from '@angular/router';
 import {NgModule} from '@angular/core';
 import {AppMainComponent} from './app.main.component';
-import { ListDemoComponent } from './demo/view/leagueOfLegends/listdemo.component';
 import { DarkSoulsIIComponent } from './demo/view/dark-souls-ii/dark-souls-ii.component';
 import { DarkSoulsIIIComponent } from './demo/view/dark-souls-iii/dark-souls-iii.component';
+import { ListDemoComponent } from './demo/view/league-of-legends/listdemo.component';
 
 @NgModule({
     imports: [
