@@ -13,7 +13,7 @@
             "verified": true,
             "activity": 17,
             "damage": "50/0/0/0/0",
-            "merchant":"Blacksmith LenigrastSteady Hand McDuff",
+            "merchant": "Blacksmith LenigrastSteady Hand McDuff",
             "representative": {
                 "name": "Ioni Bowcher",
                 "image": "1.png"
@@ -33,6 +33,7 @@
             "verified": true,
             "activity": 17,
             "damage": "85/0/0/0/0",
+            "merchant": "Steady Hand McDuff Blacksmith Lenigrast (50)",
             "representative": {
                 "name": "Ioni Bowcher",
                 "image": "2.png"
@@ -51,6 +52,7 @@
             "status": "arrow",
             "verified": true,
             "activity": 17,
+            "merchant": "Chancellor Wellager",
             "damage": "50/160/0/0/0",
             "representative": {
                 "name": "Ioni Bowcher",
@@ -69,6 +71,7 @@
             "date": "2015-09-13",
             "status": "arrow",
             "verified": true,
+            "merchant": "Chancellor Wellager",
             "activity": 17,
             "damage": "50/0/0/140/0",
             "representative": {
@@ -89,6 +92,8 @@
             "status": "arrow",
             "verified": true,
             "activity": 17,
+            "merchant": "Weaponsmith Ornifex",
+            "damage": "50/0/160/0/0",
             "representative": {
                 "name": "Ioni Bowcher",
                 "image": "5.png"
@@ -107,6 +112,8 @@
             "status": "arrow",
             "verified": true,
             "activity": 17,
+            "merchant": "Grave Warden Agdayne",
+            "damage": "50/0/0/0/160",
             "representative": {
                 "name": "Ioni Bowcher",
                 "image": "6.png"
@@ -125,6 +132,8 @@
             "status": "arrow",
             "verified": true,
             "activity": 17,
+            "merchant": "Lonesome Gavlan",
+            "damage": "50/0/0/0/0 300 Poison",
             "representative": {
                 "name": "Ioni Bowcher",
                 "image": "7.png"
@@ -143,6 +152,8 @@
             "status": "arrow",
             "verified": true,
             "activity": 17,
+            "merchant": "Not sold",
+            "damage": "50/0/0/0/0 300 Bleed",
             "representative": {
                 "name": "Ioni Bowcher",
                 "image": "8.png"
@@ -160,12 +171,14 @@
             "date": "2015-09-13",
             "status": "bolts",
             "verified": true,
+            "damage": "70/0/0/0/0",
+            "merchant": "Blacksmith Lenigrast (50) Steady Hand McDuff",
             "activity": 17,
             "representative": {
                 "name": "Ioni Bowcher",
                 "image": "9.png"
             },
-            "balance": 70663
+            "balance": 25
         },
         {
             "id": 10,
@@ -179,12 +192,173 @@
             "status": "bolts",
             "verified": true,
             "activity": 17,
+            "damage": "100/0/0/0/0",
+            "merchant": "Blacksmith Lenigrast Steady Hand McDuff",
             "representative": {
                 "name": "Ioni Bowcher",
                 "image": "10.png"
             },
-            "balance": 70663
+            "balance": 50
+        },
+        {
+            "id": 11,
+            "name": "Fire Bolt",
+            "country": {
+                "name": "Algeria",
+                "code": "dz"
+            },
+            "company": "Benton, John B Jr",
+            "date": "2015-010-13",
+            "status": "bolts",
+            "verified": true,
+            "activity": 17,
+            "damage": "100/0/0/0/0",
+            "merchant": "Blacksmith Lenigrast Steady Hand McDuff",
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "11.png"
+            },
+            "balance": 50
+        },
+        {
+            "id": 12,
+            "name": "Lightning Bolt",
+            "country": {
+                "name": "Algeria",
+                "code": "dz"
+            },
+            "company": "Benton, John B Jr",
+            "date": "2015-010-13",
+            "status": "bolts",
+            "verified": true,
+            "activity": 17,
+            "damage": "70/0/0/160/0",
+            "merchant": "Blacksmith Lenigrast Steady Hand McDuff",
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "12.png"
+            },
+            "balance": 50
+        },
+        {
+            "id": 13,
+            "name": "Magic Bolt",
+            "country": {
+                "name": "Algeria",
+                "code": "dz"
+            },
+            "company": "Benton, John B Jr",
+            "date": "2015-010-13",
+            "status": "bolts",
+            "verified": true,
+            "activity": 17,
+            "damage": "70/160/0/0/0",
+            "merchant": "Blacksmith Lenigrast Steady Hand McDuff",
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "13.png"
+            },
+            "balance": 50
+        },
+        {
+            "id": 14,
+            "name": "Dark Bolt",
+            "country": {
+                "name": "Algeria",
+                "code": "dz"
+            },
+            "company": "Benton, John B Jr",
+            "date": "2015-010-13",
+            "status": "bolts",
+            "verified": true,
+            "activity": 17,
+            "damage": "100/0/0/0/0",
+            "merchant": "Blacksmith Lenigrast Steady Hand McDuff",
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "14.png"
+            },
+            "balance": 50
+        },
+        {
+            "id": 15,
+            "name": "Iron Greatarrowt",
+            "country": {
+                "name": "Algeria",
+                "code": "dz"
+            },
+            "company": "Benton, John B Jr",
+            "date": "2015-010-13",
+            "status": "greatarrows",
+            "verified": true,
+            "activity": 17,
+            "damage": "200/0/0/0/0",
+            "merchant": "Steady Hand McDuff",
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "15.png"
+            },
+            "balance": 120
+        },
+        {
+            "id": 16,
+            "name": "Destructive Greatarrow",
+            "country": {
+                "name": "Algeria",
+                "code": "dz"
+            },
+            "company": "Benton, John B Jr",
+            "date": "2015-010-13",
+            "status": "greatarrows",
+            "verified": true,
+            "activity": 17,
+            "damage": "250/0/0/0/ Extra durability damage",
+            "merchant": "Blacksmith Lenigrast Steady Hand McDuff",
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "16.png"
+            },
+            "balance": 180
+        },
+        {
+            "id": 17,
+            "name": "Lightning Greatarrow",
+            "country": {
+                "name": "Algeria",
+                "code": "dz"
+            },
+            "company": "Benton, John B Jr",
+            "date": "2015-010-13",
+            "status": "greatarrows",
+            "verified": true,
+            "activity": 17,
+            "damage": "100/0/0/0/0",
+            "merchant": "Blacksmith Lenigrast Steady Hand McDuff",
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "17.png"
+            },
+            "balance": 180
+        },
+        {
+            "id": 18,
+            "name": "Fire Greatarrow",
+            "country": {
+                "name": "Algeria",
+                "code": "dz"
+            },
+            "company": "Benton, John B Jr",
+            "date": "2015-010-13",
+            "status": "greatarrows",
+            "verified": true,
+            "activity": 17,
+            "damage": "100/0/0/0/0",
+            "merchant": "Blacksmith Lenigrast Steady Hand McDuff",
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "18.png"
+            },
+            "balance": 180
         }
-
     ]
 }
