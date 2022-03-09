@@ -1,40 +1,282 @@
 {
-  "data": [
-      {
-          "id": 1,
-          "name": "The Last Giant",
-          "country": {
-              "name": "Algeria",
-              "code": "dz"
-          },
-          "company": "Benton, John B Jr",
-          "date": "2015-09-13",
-          "status": "yes",
-          "verified": true,
-          "activity": 17,
-          "representative": {
-              "name": "Ioni Bowcher",
-              "image": "the_last_giant.jpg"
-          },
-          "balance": 70663
-      },
-      {
-        "id": 2,
-        "name": "The Last Giant",
-        "country": {
-            "name": "Algeria",
-            "code": "dz"
+    "data": [
+        {
+            "id": 1,
+            "name": "The Last Giant",
+            "souls": "10,000",
+            "allySouls": "7,500",
+            "asAlly": "2,500",
+            "status": "yes",
+            "activity": 17,
+            "image": "the_last_giant.jpg"
         },
-        "company": "Benton, John B Jr",
-        "date": "2015-09-13",
-        "status": "no",
-        "verified": true,
-        "activity": 17,
-        "representative": {
-            "name": "Ioni Bowcher",
-            "image": "ionibowcher.png"
+        {
+            "id": 2,
+            "name": "The Pursuer",
+            "souls": "17,000",
+            "allySouls": "12,750",
+            "asAlly": "4,250",
+            "status": "no",
+            "activity": 17,
+            "image": "pursuer.jpg"
         },
-        "balance": 70663
-    }
-  ]
+        {
+            "id": 3,
+            "name": "Dragonrider",
+            "souls": "12,000",
+            "allySouls": "9,000",
+            "asAlly": "3,000",
+            "status": "yes",
+            "activity": 17,
+            "image": "dragonrider.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "image": "old-dragonslayer.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Gaping Dragon",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "image": "gaping-dragon.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "image": "gaping-dragon.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "image": "old-dragonslayer.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Old Dragonslayer",
+            "souls": "20,000",
+            "allySouls": "15,000",
+            "asAlly": "5,000",
+            "status": "no",
+            "activity": 17,
+            "representative": {
+                "name": "Ioni Bowcher",
+                "image": "old-dragonslayer.jpg"
+            }
+        }
+    ]
 }

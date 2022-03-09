@@ -8,9 +8,9 @@ import { AppMainComponent } from './app.main.component';
         <div class="layout-topbar">
             <div class="layout-topbar-wrapper">
                 <div class="layout-topbar-left">
-                    <div class="layout-topbar-logo" id="logolink" style="cursor: pointer; outline: none;" routerLink="/">
+                    <div class="layout-topbar-logo" id="logolink" style="margin-top: 9%;cursor: pointer; outline: none;" routerLink="/">
                         <h5>
-                            Trxuxv - Games Click   
+                           Games Click - Trxuxv 
                         </h5> 
                     </div>
                     <!-- <img id="app-logo"
@@ -31,12 +31,12 @@ import { AppMainComponent } from './app.main.component';
                                 </span>
                             </a>
 
-                            <div class="search-input-wrapper">
+                            <!-- <div class="search-input-wrapper">
                                 <span class="p-input-icon-left">
                                     <i class="pi pi-search"></i>
                                     <input type="text" pInputText placeholder="Procurar..."/>
                                 </span>
-                            </div>
+                            </div> -->
 
                             <!-- <ul class="fadeInDown">
                                 <div class="search-input-wrapper p-fluid">

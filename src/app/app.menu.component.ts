@@ -18,19 +18,15 @@ export class AppMenuComponent implements OnInit {
     ngOnInit() {
         this.model = [
             {
-                label: 'League of Legends', icon: 'pi pi-fw pi-star', routerLink: ['/uikit'],
-                items: [
-                    // {label: 'Form Layout', icon: 'pi pi-fw pi-id-card', routerLink: ['']},
-                    { label: 'Champions', icon: 'pi pi-fw pi-list', routerLink: [''] },
-                ]
+                label: 'Home', routerLink: [''], 
             },
             {
-                label: 'Dark Souls', icon: 'pi pi-fw pi-star', routerLink: ['/uikit'],
+                label: 'Dark Souls', routerLink: ['/uikit'],
                 items: [
                     {
                         label: 'Dark Souls', icon: 'pi pi-fw pi-list', items: [
                             { label: 'Bosses', icon: 'pi pi-angle-right', routerLink: ['/dark'] },
-                            { label: 'Lore', icon: 'pi pi-angle-right', routerLink: ['/dark'] },
+                            { label: 'Lore', icon: 'pi pi-angle-right', routerLink: ['/dark-lore'] },
                         ]
                     },
 
@@ -50,8 +46,48 @@ export class AppMenuComponent implements OnInit {
                     }
                 ]
             },
+
             {
-                label: 'Bloodborne', icon: 'pi pi-fw pi-star', routerLink: ['/uikit'],
+                label: 'League of Legends',
+                items: [
+                    // {label: 'Form Layout', icon: 'pi pi-fw pi-id-card', routerLink: ['']},
+                    { label: 'Champions', icon: 'pi pi-fw pi-list', routerLink: ['lol'] },
+                    {
+                        label: 'Cities', icon: 'pi pi-fw pi-map-marker', items: [
+                            { label: 'Ionia', icon: 'pi pi-angle-right', routerLink: ['/ionia'] },
+                            { label: 'Runeterra', icon: 'pi pi-angle-right', routerLink: ['/runeterra'] },
+                            { label: 'Shurima', icon: 'pi pi-angle-right', routerLink: ['/shurima'] },
+                            { label: 'Freljord', icon: 'pi pi-angle-right', routerLink: ['/freljord'] },
+                            { label: 'Targon', icon: 'pi pi-angle-right', routerLink: ['/targon'] },
+                            { label: 'Noxus', icon: 'pi pi-angle-right', routerLink: ['/noxus'] },
+                        ]
+                    },
+                ]
+            },
+
+            {
+                label: 'Bloodborne', routerLink: ['/uikit'],
+                items: [
+                    { label: 'Bosses', icon: 'pi pi-angle-right', routerLink: ['/dark-souls-iii-bosses'] },
+                    { label: 'Lore', icon: 'pi pi-angle-right', routerLink: ['/dark-souls-iii-lore'] },
+                ]
+            },
+            {
+                label: 'Cuphead', routerLink: ['/uikit'],
+                items: [
+                    { label: 'Bosses', icon: 'pi pi-angle-right', routerLink: ['/dark-souls-iii-bosses'] },
+                    { label: 'Lore', icon: 'pi pi-angle-right', routerLink: ['/dark-souls-iii-lore'] },
+                ]
+            },
+            {
+                label: 'Elder Ring', routerLink: ['/uikit'],
+                items: [
+                    { label: 'Bosses', icon: 'pi pi-angle-right', routerLink: ['/elder-ring-bosses'] },
+                    { label: 'Lore', icon: 'pi pi-angle-right', routerLink: ['/dark-souls-iii-lore'] },
+                ]
+            },
+            {
+                label: 'Sekiro', routerLink: ['/uikit'],
                 items: [
                     { label: 'Bosses', icon: 'pi pi-angle-right', routerLink: ['/dark-souls-iii-bosses'] },
                     { label: 'Lore', icon: 'pi pi-angle-right', routerLink: ['/dark-souls-iii-lore'] },

@@ -1,3 +1,6 @@
+import { ElderRingService } from './demo/view/elder-ring/elder-ring.service';
+import { ElderRingComponent } from './demo/view/elder-ring/elder-ring.component';
+import { HomeComponent } from './demo/home/home.component';
 import { ArrowService } from './demo/view/dark-souls-ii/arrows/arrows.service';
 import { BonfireItemsComponent } from './demo/view/dark-souls-ii/bonfire-items/bonfire-items.component';
 import { ArrowsComponent } from './demo/view/dark-souls-ii/arrows/arrows.component';
@@ -119,6 +122,7 @@ import { DarkSoulsIIComponent } from './demo/view/dark-souls-ii/dark-souls-ii.co
 import { DarkSoulsIIIComponent } from './demo/view/dark-souls-iii/dark-souls-iii.component';
 import { ListDemoComponent } from './demo/view/league-of-legends/listdemo.component';
 import { DarkSoulsIITableComponent } from './demo/view/dark-souls-ii/dark-souls-ii-table/dark-souls-ii-table.component';
+import { DarkSoulsLoreComponent } from './demo/view/dark-souls/dark-souls-lore/dark-souls-lore.component';
 
 @NgModule({
     imports: [
@@ -151,6 +155,7 @@ import { DarkSoulsIITableComponent } from './demo/view/dark-souls-ii/dark-souls-
         DialogModule,
         DividerModule,
         DropdownModule,
+        OrganizationChartModule,
         FieldsetModule,
         FileUploadModule,
         FullCalendarModule,
@@ -220,7 +225,10 @@ import { DarkSoulsIITableComponent } from './demo/view/dark-souls-ii/dark-souls-
         AppFooterComponent,
         FormLayoutDemoComponent,
         ListDemoComponent,
+        HomeComponent,
+        ElderRingComponent,
         ListBossesComponent,
+        DarkSoulsLoreComponent,
         DarkSoulsIIComponent,
         DarkSoulsIIIComponent,
         DarkSoulsIITableComponent,
@@ -232,18 +240,19 @@ import { DarkSoulsIITableComponent } from './demo/view/dark-souls-ii/dark-souls-
             provide: LocationStrategy,
             useClass: HashLocationStrategy
         },
-        CountryService, 
-        CustomerService, 
-        EventService, 
+        CountryService,
+        CustomerService,
+        EventService,
+        ElderRingService,
         IconService,
         NodeService,
-        PhotoService, 
-        ProductService, 
-        MenuService, 
-        BossService, 
-        DarkSoulsIIService, 
+        PhotoService,
+        ProductService,
+        MenuService,
+        BossService,
+        DarkSoulsIIService,
         DarkSoulsIIIService,
-        ArrowService, 
+        ArrowService,
         AppBreadcrumbService
     ],
     bootstrap: [AppComponent]

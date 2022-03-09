@@ -25,8 +25,8 @@
 								<div class="product-name">{{boss.name}}</div>
 								<div class="product-description">{{boss.description}}</div>
 								<p-rating [ngModel]="boss.rating" [readonly]="true" [cancel]="false"></p-rating>
-								<!-- <i class="pi pi-sun product-category-icon"></i> -->
-								<span class="product-category">{{boss.category}}</span>
+								<i class="pi pi-sun product-category-icon"></i>
+								<span class="product-category">{{boss.id}}</span>
 							</div>
 							<div class="product-list-action">
 								<p-button icon="pi pi-eye" (click)="editProduct(boss)"></p-button>
@@ -45,7 +45,7 @@
 							<div class="product-grid-item-top">
 								<div>
 									<i class="pi pi-circle-on product-category-icon"></i>
-									<span class="product-category">{{boss.category}}</span>
+									<span class="product-category">{{boss.id}}</span>
 								</div>
 								<span
 									[class]="'product-badge status-' + boss.inventoryStatus.toLowerCase()">{{boss.inventoryStatus}}</span>
@@ -91,7 +91,7 @@
 					<span
 						[class]="'product-badge status-' + boss.inventoryStatus.toLowerCase()">{{boss.inventoryStatus}}</span>
 				</p>
-				<p>Categoria: {{boss.category}}</p>
+				<!-- <p>Categoria: {{boss.category}}</p> -->
 				<p>
 					{{boss.rune}}
 				</p>

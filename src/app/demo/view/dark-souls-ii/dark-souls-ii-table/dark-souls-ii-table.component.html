@@ -10,10 +10,11 @@
 							[filterDelay]="0"
 							[globalFilterFields]="['name','country.name','representative.name','status']">
 							<ng-template pTemplate="caption">
-								<div class="p-d-flex p-flex-column p-flex-md-row p-jc-md-between table-header" style="width: 100%;">
-									<span class="p-input-icon-left"  style="width: 100%;">
+								<div class="p-d-flex p-flex-column p-flex-md-row p-jc-md-between table-header"
+									style="width: 100%;">
+									<span class="p-input-icon-left" style="width: 100%;">
 										<i class="pi pi-search"></i>
-										<input pInputText type="text"  style="width: 30%;"
+										<input pInputText type="text" style="width: 30%;"
 											(input)="dt.filterGlobal($event.target.value, 'contains')"
 											placeholder="Global Search" />
 									</span>
@@ -38,45 +39,26 @@
 											</p-columnFilter>
 										</div>
 									</th>
-									<th pSortableColumn="representative.name">
+									<th pSortableColumn="image">
 										<div class="p-d-flex p-jc-between p-ai-center">
 											Souls
-											<p-sortIcon field="representative.name"></p-sortIcon>
+											<p-sortIcon field="image"></p-sortIcon>
 											<p-columnFilter field="representative" matchMode="in" display="menu"
 												[showMatchModes]="false" [showOperator]="false" [showAddButton]="false">
-												<ng-template pTemplate="header">
-													<div class="p-px-3 p-pt-3 p-pb-0">
-														<span class="p-text-bold">Agent Picker</span>
-													</div>
-												</ng-template>
-												<ng-template pTemplate="filter" let-value let-filter="filterCallback">
-													<p-multiSelect [ngModel]="value" [options]="representatives"
-														placeholder="Any" (onChange)="filter($event.value)"
-														optionLabel="name">
-														<ng-template let-option pTemplate="item">
-															<div class="p-multiselect-representative-option">
-																<img [alt]="option.label"
-																	src="assets/demo/images/avatar/{{option.image}}"
-																	width="32" style="vertical-align: middle" />
-																<span class="p-ml-1">{{option.name}}</span>
-															</div>
-														</ng-template>
-													</p-multiSelect>
-												</ng-template>
 											</p-columnFilter>
 										</div>
 									</th>
-									<th pSortableColumn="date">
+									<th pSortableColumn="souls">
 										<div class="p-d-flex p-jc-between p-ai-center">
-											Date
-											<p-sortIcon field="date"></p-sortIcon>
-											<p-columnFilter type="date" field="date" display="menu" class="p-ml-auto">
+											Souls w/Ally
+											<p-sortIcon field="souls"></p-sortIcon>
+											<p-columnFilter type="souls" field="souls" display="menu" class="p-ml-auto">
 											</p-columnFilter>
 										</div>
 									</th>
 									<th pSortableColumn="balance">
 										<div class="p-d-flex p-jc-between p-ai-center">
-											Balance
+											Souls as/Ally
 											<p-sortIcon field="balance"></p-sortIcon>
 											<p-columnFilter type="numeric" field="balance" display="menu" currency="USD"
 												class="p-ml-auto"></p-columnFilter>
@@ -123,9 +105,9 @@
 								<tr class="p-selectable-row">
 									<td>
 										<span class="p-column-title">Country</span>
-										<img [alt]="customer.representative.name"
-											src="assets/demo/images/dark-souls-ii/bosses/{{customer.representative.image}}"
-											width="32" style="vertical-align: middle" />
+										<img [alt]="customer.name"
+											src="assets/demo/images/dark-souls-ii/bosses/{{customer.image}}" width="32"
+											style="vertical-align: middle" />
 									</td>
 									<td>
 										<span class="p-column-title">Name</span>
@@ -133,16 +115,16 @@
 									</td>
 									<td>
 										<span class="p-column-title">Representative</span>
-										<span class="p-column-title">Date</span>
-										{{customer.date | date: 'MM/dd/yyyy'}}
+										<span class="p-column-title">Souls</span>
+										{{customer.souls}}
 									</td>
 									<td>
-										<span class="p-column-title">Date</span>
-										{{customer.date | date: 'MM/dd/yyyy'}}
+										<span class="p-column-title">Souls w/Ally</span>
+										{{customer.allySouls}}
 									</td>
 									<td>
-										<span class="p-column-title">Balance</span>
-										{{customer.balance | currency:'USD':'symbol'}}
+										<span class="p-column-title">Souls as/Ally</span>
+										{{customer.asAlly}}
 									</td>
 									<td>
 										<span class="p-column-title">Status</span>

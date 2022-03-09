@@ -136,7 +136,7 @@ export class AppConfigComponent implements OnInit {
 
     themes: any[];
 
-    theme = 'denim';
+    theme = 'amber';
 
     constructor(public appMain: AppMainComponent, public app: AppComponent) {}
 

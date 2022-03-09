@@ -1,0 +1,91 @@
+<div class="p-grid list-demo">
+  <div class="p-col-12">
+    <div class="card">
+      <h5>Bosses</h5>
+      <p-dataView #dv [value]="bosses" [paginator]="true" [rows]="12" filterBy="name" [sortField]="sortField"
+        [sortOrder]="sortOrder" layout="grid">
+        <ng-template pTemplate="header">
+          <div class="p-d-flex p-flex-column p-flex-md-row p-jc-md-between">
+            <p-dropdown [options]="sortOptions" [(ngModel)]="sortKey" placeholder="Ordernar pela dificuldade"
+              (onChange)="onSortChange($event)" styleClass="p-mb-2 p-mb-md-0"></p-dropdown>
+            <span class="p-input-icon-left p-mb-2 p-mb-md-0">
+              <i class="pi pi-search"></i>
+              <input type="search" pInputText placeholder="Procurar pelo nome" (input)="dv.filter($event.target.value)">
+            </span>
+            <p-dataViewLayoutOptions></p-dataViewLayoutOptions>
+          </div>
+        </ng-template>
+        <ng-template let-boss pTemplate="listItem">
+          <div class="p-col-12">
+            <div class="product-list-item">
+              <img [src]="'assets/demo/images/elder-ring/bosses/' + boss.image" [alt]="boss.name" />
+              <div class="product-list-detail">
+                <div class="product-name">{{boss.name}}</div>
+                <div class="product-description">{{boss.description}}</div>
+                <p-rating [ngModel]="boss.rating" [readonly]="true" [cancel]="false"></p-rating>
+                <!-- <i class="pi pi-sun product-category-icon"></i> -->
+                <span class="product-category">{{boss.category}}</span>
+              </div>
+              <div class="product-list-action">
+                <p-button icon="pi pi-eye" (click)="editProduct(boss)"></p-button>
+                <span class="product-price"><button pButton pRipple type="button" label="{{boss.city}}"
+                    class="p-button-outlined p-button-info p-mr-2 p-mb-2"></button></span>
+                <span
+                  [class]="'product-badge status-' + boss.inventoryStatus.toLowerCase()">{{boss.inventoryStatus}}</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template let-boss pTemplate="gridItem">
+          <div class="p-col-12 p-md-4">
+            <div class="product-grid-item card">
+              <div class="product-grid-item-top">
+                <span
+                  [class]="'product-badge status-' + boss.inventoryStatus.toLowerCase()">{{boss.inventoryStatus}}</span>
+              </div>
+              <div class="product-grid-item-content">
+                <img style="width: 355.73px; height: 209.32px;"
+                  [src]="'assets/demo/images/elder-ring/bosses/' + boss.image" [alt]="boss.name" />
+                <div class="product-name">{{boss.name}}</div>
+                <div class="product-description">{{boss.description}}</div>
+                <p-rating [ngModel]="boss.rating" [readonly]="true" [cancel]="false"></p-rating>
+              </div>
+              <div class="product-grid-item-bottom">
+                <span class="product-price"><button pButton pRipple type="button" label="{{boss.city}}"
+                    class="p-button-outlined p-mr-2 p-mb-2"></button></span>
+                <p-button icon="pi pi-eye" (click)="editProduct(boss)"></p-button>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </p-dataView>
+    </div>
+  </div>
+
+  <p-dialog [(visible)]="productDialog" [style]="{width: '60%'}" header="Detalhes" [modal]="true" styleClass="p-fluid">
+    <ng-template pTemplate="content">
+      <h1></h1>
+      <p>
+        <span [class]="'product-badge status-' + boss.inventoryStatus.toLowerCase()">{{boss.inventoryStatus}}</span>
+      </p>
+      <!-- <p>Categoria: {{boss.category}}</p> -->
+      <img width="60%" [src]="'assets/demo/images/elder-ring/bosses/' + boss.iamge" [alt]="boss.image"
+        class="product-image" *ngIf="boss.image">
+
+      <div style="float: right; width: 40%; text-align: center;">
+        <h5>
+          {{boss.name}}
+        </h5>
+        <div style="padding: 1% 9%;">
+          <p style="text-align: justify;">
+            {{boss.lore}}
+          </p>
+        </div>
+      </div>
+    </ng-template>
+
+    <ng-template pTemplate="footer">
+      <button pButton pRipple label="Close" icon="pi pi-times" class="p-button-text" (click)="hideDialog()"></button>
+    </ng-template>
+  </p-dialog>
+</div>

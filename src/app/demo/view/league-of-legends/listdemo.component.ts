@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { SelectItem } from 'primeng/api';
 import { AppBreadcrumbService } from 'src/app/app.breadcrumb.service';
-import { Product } from '../../domain/product';
 import { ProductService } from '../../service/productservice';
+import { Component, OnInit } from '@angular/core';
+import { Product } from '../../domain/product';
+import { SelectItem } from 'primeng/api';
 
 @Component({
     templateUrl: './listdemo.component.html',
@@ -30,8 +30,8 @@ export class ListDemoComponent implements OnInit {
 
     constructor(private productService: ProductService, private breadcrumbService: AppBreadcrumbService) {
         this.breadcrumbService.setItems([
-            { label: 'Ui Kit' },
-            { label: 'List', routerLink: ['/uikit/list'] }
+            { label: 'League of Legends' },
+            { label: 'Champions', routerLink: ['/uikit/list'] }
         ]);
     }
 
@@ -45,7 +45,7 @@ export class ListDemoComponent implements OnInit {
     }
 
     editProduct(product: Product) {
-        this.product = {...product};
+        this.product = { ...product };
         this.productDialog = true;
     }
 

@@ -39,8 +39,8 @@ export class ListBossesComponent implements OnInit {
         this.bossService.getBosses().then(data => this.bosses = data);
 
         this.sortOptions = [
-            { label: 'Dificulty High to Low', value: '!inventoryStatus' },
-            { label: 'Dificulty Low to High', value: 'inventoryStatus' }
+            { label: 'Dificuldade maior para menor', value: '!inventoryStatus' },
+            { label: 'Dificuldade menor para maior', value: 'inventoryStatus' }
         ];
     }
 

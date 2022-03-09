@@ -30,8 +30,7 @@
 							</div>
 							<div class="product-list-action">
 								<p-button icon="pi pi-eye" (click)="editProduct(boss)"></p-button>
-								<span class="product-price"><button pButton pRipple type="button"
-										label="{{boss.city}}"
+								<span class="product-price"><button pButton pRipple type="button" label="{{boss.city}}"
 										class="p-button-outlined p-button-info p-mr-2 p-mb-2"></button></span>
 								<span
 									[class]="'product-badge status-' + boss.inventoryStatus.toLowerCase()">{{boss.inventoryStatus}}</span>
@@ -43,22 +42,18 @@
 					<div class="p-col-12 p-md-4">
 						<div class="product-grid-item card">
 							<div class="product-grid-item-top">
-								<div>
-									<i class="pi pi-circle-on product-category-icon"></i>
-									<span class="product-category">{{boss.category}}</span>
-								</div>
 								<span
 									[class]="'product-badge status-' + boss.inventoryStatus.toLowerCase()">{{boss.inventoryStatus}}</span>
 							</div>
 							<div class="product-grid-item-content">
-								<img style="width: 355.73px; height: 209.32px;" [src]="'assets/demo/images/dark-souls/bosses/' + boss.image" [alt]="boss.name" />
+								<img style="width: 355.73px; height: 209.32px;"
+									[src]="'assets/demo/images/dark-souls/bosses/' + boss.image" [alt]="boss.name" />
 								<div class="product-name">{{boss.name}}</div>
 								<div class="product-description">{{boss.description}}</div>
 								<p-rating [ngModel]="boss.rating" [readonly]="true" [cancel]="false"></p-rating>
 							</div>
 							<div class="product-grid-item-bottom">
-								<span class="product-price"><button pButton pRipple type="button"
-										label="{{boss.city}}"
+								<span class="product-price"><button pButton pRipple type="button" label="{{boss.city}}"
 										class="p-button-outlined p-mr-2 p-mb-2"></button></span>
 								<p-button icon="pi pi-eye" (click)="editProduct(boss)"></p-button>
 							</div>
@@ -73,28 +68,23 @@
 		styleClass="p-fluid">
 		<ng-template pTemplate="content">
 			<h1></h1>
-			<img width="60%" style="width: 664.8px; height: 392.3px;background-color: red;" [src]="'assets/demo/images/dark-souls/bosses/' + boss.image"
-				[alt]="boss.image" class="product-image" *ngIf="boss.image">
+			<p>
+				<span
+					[class]="'product-badge status-' + boss.inventoryStatus.toLowerCase()">{{boss.inventoryStatus}}</span>
+			</p>
+			<!-- <p>Categoria: {{boss.category}}</p> -->
+			<img width="60%" [src]="'assets/demo/images/dark-souls/bosses/' + boss.image" [alt]="boss.image"
+				class="product-image" *ngIf="boss.image">
 
 			<div style="float: right; width: 40%; text-align: center;">
 				<h5>
-					{{boss.name}} - {{boss.description}}
+					{{boss.name}}
 				</h5>
 				<div style="padding: 1% 9%;">
 					<p style="text-align: justify;">
 						{{boss.lore}}
 					</p>
 				</div>
-			</div>
-			<div class="p-field">
-				<p>Dificuldade:
-					<span
-						[class]="'product-badge status-' + boss.inventoryStatus.toLowerCase()">{{boss.inventoryStatus}}</span>
-				</p>
-				<p>Categoria: {{boss.category}}</p>
-				<p>
-					{{boss.rune}}
-				</p>
 			</div>
 		</ng-template>
 

@@ -47,7 +47,7 @@ export class DarkSoulsIITableComponent implements OnInit {
     private breadcrumbService: AppBreadcrumbService) {
     this.breadcrumbService.setItems([
       { label: 'Dark souls ii' },
-      { label: 'All', routerLink: ['/uikit/table'] }
+      { label: 'Items', routerLink: ['/uikit/table'] }
     ]);
   }
 
